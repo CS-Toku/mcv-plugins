@@ -12,7 +12,7 @@
     {% endif %}
     <b>{{ s.name }}</b>: {{ s.detail }}
   </caption>
-  <table class="table table-bordered table-responsive table-hover">
+  <table class="table table-bordered table-responsive table-hover" data-href="{{ s.link }}">
     <thead>
       {% if s.state is equalto state.SUCCESS %}
       <tr class="success">
