@@ -54,7 +54,7 @@ class Analysis(BaseAnalysisClass):
                     analysis_info['detail'] = 'Not found the corresponding series'
 
                 # new_dataの値が大きかった場合
-                elif max_value > max_period_data[series_name]:
+                elif max_value > max_period_data[series_name][0]:
                     mt_state_dict[mt] = State.get_high_priority_state(
                                             mt_state_dict[mt],
                                             State.WARNING)
